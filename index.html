@@ -1,340 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Basic document + mobile -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hive 6 | Expert Accounting, Bookkeeping & CFO Services</title>
 
-    <!-- Page title (browser tab + SEO) -->
-    <title>Hive 6 – Finance Operations, Bookkeeping, AP & Reporting</title>
-
-    <!-- SEO description -->
     <meta
       name="description"
-      content="Hive 6 runs your finance operations so you can scale with confidence. Done-for-you bookkeeping, accounts payable, invoicing, collections, cash flow tracking, burn and runway reporting. Bay Area, California. Available 24/7."
+      content="Hive 6 runs your finance operations so you can scale with confidence. Expert bookkeeping, payables, collections, and reporting for startups and small businesses."
     />
-
-    <!-- SEO keywords -->
     <meta
       name="keywords"
-      content="startup bookkeeping, outsourced bookkeeping, accounts payable services, accounts receivable collections, startup controller, outsourced finance team, finance operations, cash flow management, burn rate reporting, runway reporting, Bay Area bookkeeping, Bay Area accounting support, startup CFO support"
+      content="startup bookkeeping, outsourced accounting, accounts payable, accounts receivable, fractional CFO, bookkeeping services, finance operations, Bay Area bookkeeping"
     />
 
-    <!-- Social / link preview -->
-    <meta
-      property="og:title"
-      content="Hive 6 – Finance Operations for Growing Companies"
-    />
+    <meta property="og:title" content="Hive 6 – Finance Operations for Startups" />
     <meta
       property="og:description"
-      content="We act like your internal finance team — bookkeeping, AP, collections, reporting — so you can focus on growth."
+      content="We run your finance operations so you can scale with confidence. Professional bookkeeping, payables, and reporting — available 24/7."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rfkmzznjvc-arch.github.io/hive6-site/" />
 
-    <!-- Structured data so Google understands who you are -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Hive 6",
-      "description": "Hive 6 runs your finance operations so you can scale with confidence. Done-for-you bookkeeping, accounts payable, invoicing, collections, cash flow tracking, burn and runway reporting.",
-      "areaServed": "Bay Area, California",
-      "email": "finance@hive6group.com",
-      "availability": "24/7",
-      "url": "https://rfkmzznjvc-arch.github.io/hive6-site/",
-      "sameAs": []
-    }
-    </script>
-
-    <!-- Tailwind for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <style>
-      /* visually-hidden but still readable by assistive tech + crawlers, helps SEO */
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0,0,0,0);
-        white-space: nowrap;
-        border-width: 0;
-      }
-    </style>
   </head>
 
   <body class="bg-white text-gray-900 antialiased">
-    <!-- ACCESSIBLE SEO CONTENT -->
-    <section class="sr-only">
-      Hive 6 is a finance operations partner for founders, early-stage companies,
-      and growing businesses. We provide outsourced bookkeeping, monthly close,
-      accounts payable (AP), accounts receivable and collections (AR), invoice
-      management, cash flow tracking, burn rate and runway reporting, vendor
-      payment management, and ongoing finance support. We act like an internal
-      finance team, available 24/7, so you get clean financials and confident
-      reporting without hiring a full-time controller or CFO.
-    </section>
-
-    <!-- ===================================================== -->
-    <!-- HEADER / NAV BAR (this is new) -->
-    <!-- sticky nav with your brand + Contact + Get Started -->
-    <!-- ===================================================== -->
-    <header
-      class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200 shadow-sm"
-    >
-      <div
-        class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between text-sm"
-      >
-        <!-- Brand / mini mark -->
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200 shadow-sm">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         <div class="flex items-center gap-2 font-semibold text-gray-900">
-          <div
-            class="w-8 h-8 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg flex items-center justify-center shadow-lg shadow-amber-500/30"
-          >
+          <div class="w-8 h-8 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg flex items-center justify-center shadow-lg shadow-amber-500/30">
             <div class="grid grid-cols-2 gap-0.5">
-              <div class="w-1.5 h-1.5 bg-white rounded-sm"></div>
-              <div class="w-1.5 h-1.5 bg-white rounded-sm"></div>
-              <div class="w-1.5 h-1.5 bg-white rounded-sm"></div>
-              <div class="w-1.5 h-1.5 bg-white rounded-sm"></div>
-            </div>
-          </div>
-          <span>Hive 6</span>
-        </div>
-
-        <!-- Desktop nav -->
-        <nav class="hidden md:flex items-center gap-6 text-gray-700">
-          <a href="#why-hive" class="hover:text-gray-900">Why Hive 6</a>
-          <a href="#contact" class="hover:text-gray-900">Contact</a>
-
-          <!-- Get Started button in nav -->
-          <a
-            href="#contact"
-            class="bg-amber-600 hover:bg-amber-700 text-white font-medium px-4 py-2 rounded-lg shadow-lg shadow-amber-500/30"
-          >
-            Get Started
-          </a>
-        </nav>
-
-        <!-- Mobile CTA -->
-        <a
-          href="#contact"
-          class="md:hidden text-xs border border-gray-300 rounded-md px-2 py-1 bg-white/70 text-gray-700"
-        >
-          Get Started
-        </a>
-      </div>
-    </header>
-
-    <!-- spacer so hero doesn't hide under the fixed header -->
-    <div class="h-20"></div>
-
-    <!-- ===================================================== -->
-    <!-- HERO (top section with headline, bullets, image) -->
-    <!-- ===================================================== -->
-    <section
-      class="w-full bg-white text-gray-900 pt-10 pb-16 px-4 sm:px-6 md:pt-12 md:pb-20"
-    >
-      <div
-        class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
-      >
-        <!-- LEFT COLUMN: pitch -->
-        <div class="space-y-8">
-          <!-- eyebrow -->
-          <div
-            class="inline-flex items-center rounded-full border border-amber-600/30 bg-amber-50 text-amber-700 text-[11px] font-medium px-3 py-1 leading-none shadow-sm"
-          >
-            <span
-              class="w-2 h-2 rounded-full bg-amber-500 mr-2 animate-pulse"
-            ></span>
-            Finance operations made simple for modern teams
-          </div>
-
-          <!-- main headline -->
-          <h1
-            class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 leading-[1.1]"
-          >
-            We run your finance operations so you can scale with confidence.
-          </h1>
-
-          <!-- supporting copy -->
-          <p class="text-lg md:text-xl text-gray-600 max-w-xl">
-            Hive 6 delivers end-to-end bookkeeping, payables, collections, and
-            reporting — giving your team clarity, accuracy, and time to grow.
-          </p>
-
-          <!-- trust bullets -->
-          <ul
-            class="flex flex-col sm:flex-row sm:flex-wrap gap-4 text-sm text-gray-700"
-          >
-            <li class="flex items-center gap-2">
-              <span
-                class="w-4 h-4 flex items-center justify-center rounded-[4px] border border-green-600 text-green-600 text-[10px] font-semibold leading-none"
-                >✓</span
-              >
-              <span>24/7 availability</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <span
-                class="w-4 h-4 flex items-center justify-center rounded-[4px] border border-green-600 text-green-600 text-[10px] font-semibold leading-none"
-                >✓</span
-              >
-              <span>Bay Area, California</span>
-            </li>
-            <li class="flex items-center gap-2">
-              <span
-                class="w-4 h-4 flex items-center justify-center rounded-[4px] border border-green-600 text-green-600 text-[10px] font-semibold leading-none"
-                >✓</span
-              >
-              <span>Response in under 24 hours</span>
-            </li>
-          </ul>
-
-          <!-- CTA row -->
-          <div class="flex flex-col sm:flex-row sm:items-center gap-4">
-            <a
-              href="#contact"
-              class="bg-amber-600 hover:bg-amber-700 text-white shadow-lg shadow-amber-500/30 text-base px-6 py-5 h-auto rounded-lg font-medium text-center"
-            >
-              Get Started
-            </a>
-
-            <div class="text-sm text-gray-600">
-              Or email us at
-              <a
-                href="mailto:finance@hive6group.com"
-                class="text-gray-900 font-medium hover:underline"
-              >
-                finance@hive6group.com
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT COLUMN: team image -->
-        <div class="relative">
-          <!-- NOTE: this is your uploaded image at images/hive6-team-working.jpg -->
-          <!-- We are currently showing the photo you uploaded, which still has baked-in text inside it. 
-               If you want a clean version (no text in the image), we can replace that file with a new generated one under the same filename. -->
-          <img
-            src="images/hive6-team-working.jpg"
-            alt="Diverse finance and accounting team collaborating on reports"
-            class="rounded-2xl shadow-xl overflow-hidden w-full h-[260px] sm:h-[340px] lg:h-[420px] object-cover object-center bg-gray-200"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================================================== -->
-    <!-- CONTACT / LEAD SECTION -->
-    <!-- ===================================================== -->
-    <section
-      id="contact"
-      class="bg-amber-50 py-20 px-4 sm:px-6 text-center border-y border-amber-100"
-    >
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold mb-6 text-gray-900">Contact Us</h2>
-        <p class="text-gray-700 mb-8 text-lg">
-          We’ll get back to you within 24 hours. Available 24/7 to support your
-          business.
-        </p>
-
-        <a
-          href="mailto:finance@hive6group.com?subject=New inquiry from Hive 6 website"
-          class="inline-block bg-amber-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-amber-700 transition shadow-lg shadow-amber-500/30"
-        >
-          Email Us Directly
-        </a>
-
-        <div class="text-xs text-gray-500 mt-4">
-          Everything you share is confidential.
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================================================== -->
-    <!-- WHY HIVE 6 (trust section for credibility + SEO) -->
-    <!-- ===================================================== -->
-    <section id="why-hive" class="py-16 px-4 sm:px-6 bg-white">
-      <div class="max-w-6xl mx-auto">
-        <div class="max-w-2xl mx-auto text-center">
-          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-            Why companies choose Hive 6
-          </h2>
-          <p class="text-gray-600 text-lg">
-            We don’t just tell you what’s broken. We actually fix it. Hive 6 is
-            an always-on finance operations partner — not just a dashboard.
-          </p>
-        </div>
-
-        <div
-          class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8"
-        >
-          <div
-            class="rounded-2xl border border-gray-200 p-6 shadow-sm bg-white"
-          >
-            <div
-              class="text-base font-semibold text-gray-900 mb-2"
-            >
-              Hands-on execution
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-              Bookkeeping, AP, collections, reporting. We actually do the work,
-              not just point out problems. We can also work alongside your
-              existing bookkeeper if you already have one.
-            </p>
-          </div>
-
-          <div
-            class="rounded-2xl border border-gray-200 p-6 shadow-sm bg-white"
-          >
-            <div
-              class="text-base font-semibold text-gray-900 mb-2"
-            >
-              Always available
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-              We respond in under 24 hours, 7 days a week. Finance stress
-              doesn’t wait for Monday.
-            </p>
-          </div>
-
-          <div
-            class="rounded-2xl border border-gray-200 p-6 shadow-sm bg-white"
-          >
-            <div
-              class="text-base font-semibold text-gray-900 mb-2"
-            >
-              Clarity, not jargon
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-              You’ll know burn, runway, cash in / cash out, and what’s owed —
-              in plain English.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="mt-10 text-center text-xs text-gray-500"
-        >
-          Bay Area, California • Available 24/7 • Response in under 24 hours
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================================================== -->
-    <!-- FOOTER -->
-    <!-- ===================================================== -->
-    <footer class="bg-gray-900 text-gray-300 text-sm py-10 px-4 text-center">
-      <p>© 2025 Hive 6 Group — Bay Area, California</p>
-      <p class="mt-2 max-w-xl mx-auto leading-relaxed text-gray-400">
-        We act as an operations partner, not a public accounting firm.
-        CPA tax filing support available via referral.
-      </p>
-
-      <div class="mt-6 text-xs text-gray-500">
-        Contact: <a href="mailto:finance@hive6group.com" class="hover:text-white underline underline-offset-2 decoration-amber-500/40">finance@hive6group.com</a>
-      </div>
-    </footer>
-  </body>
-</html>
+              <div class="w-1
