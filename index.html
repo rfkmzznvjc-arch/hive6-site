@@ -11,11 +11,11 @@
     <!-- Primary Meta -->
     <meta
       name="description"
-      content="Hive 6 provides expert bookkeeping, accounting, AP/AR, and fractional CFO services for startups and small businesses. We manage your finance operations so you can scale with confidence."
+      content="Hive 6 provides expert bookkeeping, accounting, AP/AR, cash management, and fractional CFO services for startups and small businesses. Get clean books, on-time payables, and real cash visibility."
     />
     <meta
       name="keywords"
-      content="Hive 6, startup bookkeeping, small business accounting, fractional CFO, outsourced accounting, finance operations, bookkeeping services, accounts payable, accounts receivable, financial reporting, Bay Area bookkeeping, virtual CFO, bookkeeping for startups, AP AR management, financial dashboards, business accounting, clean books, CFO for startups, GAAP compliance, Hive6 finance"
+      content="Hive 6, startup bookkeeping, small business accounting, fractional CFO, outsourced accounting, finance operations, bookkeeping services, accounts payable, accounts receivable, financial reporting, Bay Area bookkeeping, virtual CFO, bookkeeping for startups, AP AR management, financial dashboards, business accounting, clean books, CFO for startups, GAAP compliance, Hive6 finance, controller services, cash flow forecasting"
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://rfkmzznjvc-arch.github.io/hive6-site/" />
@@ -24,7 +24,7 @@
     <meta property="og:title" content="Hive 6 | Finance Operations for Startups & Small Businesses" />
     <meta
       property="og:description"
-      content="Expert bookkeeping, AP/AR management, and fractional CFO support. Hive 6 keeps your books clean and cashflow visible."
+      content="Bookkeeping, AP/AR, collections, reporting, and fractional CFO support. Finance operations handled for you."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rfkmzznjvc-arch.github.io/hive6-site/" />
@@ -35,39 +35,49 @@
     <meta name="twitter:title" content="Hive 6 | Finance Operations Experts" />
     <meta
       name="twitter:description"
-      content="Hive 6 delivers bookkeeping, payables, receivables, and CFO support to help your startup or small business scale efficiently."
+      content="Hive 6 delivers bookkeeping, AP/AR, and CFO support to help your startup or small business scale with confidence."
     />
     <meta name="twitter:image" content="https://rfkmzznjvc-arch.github.io/hive6-site/og-image.jpg" />
 
-    <!-- Schema.org Structured Data -->
+    <!-- Local Business / Organization Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "ProfessionalService",
       "name": "Hive 6",
       "url": "https://rfkmzznjvc-arch.github.io/hive6-site/",
       "logo": "https://rfkmzznjvc-arch.github.io/hive6-site/logo.png",
-      "description": "Expert bookkeeping, accounting, and CFO services for startups and small businesses.",
-      "sameAs": [
-        "https://linkedin.com/company/hive6",
-        "https://twitter.com/hive6finance"
-      ],
-      "contactPoint": {
+      "description": "Bookkeeping, accounts payable, accounts receivable, collections, reporting automation, and fractional CFO services for startups and small businesses.",
+      "areaServed": "United States",
+      "email": "rodriguez.joaquin@proton.me",
+      "contactPoint": [{
         "@type": "ContactPoint",
         "email": "rodriguez.joaquin@proton.me",
-        "contactType": "Customer Support",
-        "availableLanguage": "English"
-      }
+        "contactType": "Sales",
+        "availableLanguage": ["English"]
+      }]
     }
     </script>
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicons -->
+    <link rel="icon" href="https://rfkmzznjvc-arch.github.io/hive6-site/logo.png" />
+
+    <!-- Basic styles for smooth scrolling -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
 
-  <body class="bg-white text-gray-900 antialiased">
+  <body id="top" class="bg-white text-gray-900 antialiased">
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200 shadow-sm" role="banner">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+        <!-- Brand -->
         <a href="#top" aria-label="Hive 6 Home" class="flex items-center gap-2 font-semibold text-gray-900">
           <div class="w-9 h-9 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg flex items-center justify-center shadow-lg shadow-amber-500/30">
             <div class="grid grid-cols-2 gap-0.5">
@@ -79,4 +89,36 @@
           </div>
           <span class="text-lg leading-tight tracking-tight">Hive 6</span>
         </a>
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700" aria-label="Main
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700" aria-label="Main navigation">
+          <a href="#services" class="hover:text-gray-900 transition-colors">Services</a>
+          <a href="#why-us" class="hover:text-gray-900 transition-colors">Why Hive 6</a>
+          <a href="#process" class="hover:text-gray-900 transition-colors">How It Works</a>
+          <a href="#faq" class="hover:text-gray-900 transition-colors">FAQ</a>
+          <a href="#contact" class="hover:text-gray-900 transition-colors">Contact</a>
+        </nav>
+
+        <!-- CTA buttons -->
+        <div class="hidden md:flex items-center gap-3">
+          <a
+            href="mailto:rodriguez.joaquin@proton.me?subject=I%20need%20bookkeeping%20and%20finance%20support&body=Hi%20Hive%206%2C%20we%27d%20like%20help%20with%20our%20finance%20operations.%20Company%20name%3A%20_____%0ARevenue%20range%3A%20_____%0AWhat%20we%20need%3A%20bookkeeping%20%7C%20AP%2FAR%20%7C%20cash%20reporting%20%7C%20fractional%20CFO"
+            class="text-sm font-medium text-gray-700 hover:text-gray-900"
+          >
+            Email us
+          </a>
+          <a
+            href="#contact"
+            class="inline-flex items-center rounded-lg bg-amber-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-amber-500/30 hover:bg-amber-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 focus-visible:ring-offset-2"
+          >
+            Get started
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-3 py-2 text-gray-700 text-sm font-medium shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-amber-500"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
