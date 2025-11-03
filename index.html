@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Essentials -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hive 6 — Accounting, Bookkeeping & Fractional CFO</title>
-  <meta name="description" content="Professional bookkeeping, AP/AR, payroll sync, and fractional CFO support for startups and small businesses. Clean books, cash visibility, and on-time operations." />
-  <link rel="canonical" href="https://example.com/" />
+  <meta name="description" content="Hive 6 provides expert bookkeeping, AP/AR, payroll sync, and fractional CFO services for startups and small businesses. Clean books, cash visibility, and confidence in your finances." />
+  <link rel="canonical" href="https://rfkmzznjvc-arch.github.io/hive6-site/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Hive 6 — Accounting, Bookkeeping & Fractional CFO" />
   <meta property="og:description" content="Clean books, cash visibility, and finance operations you can trust." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://example.com/" />
-  <meta property="og:image" content="https://example.com/og-image.jpg" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.png" />
+  <meta property="og:url" content="https://rfkmzznjvc-arch.github.io/hive6-site/" />
+  <meta property="og:image" content="https://rfkmzznjvc-arch.github.io/hive6-site/images/hive6-team-working.jpg" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -24,352 +20,195 @@
     "@context":"https://schema.org",
     "@type":"AccountingService",
     "name":"Hive 6",
-    "url":"https://example.com/",
-    "description":"Bookkeeping, AP/AR, payroll sync, reporting, and fractional CFO.",
-    "areaServed":"US",
-    "telephone":"+1-415-000-0000",
-    "email":"hello@example.com",
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"San Francisco",
-      "addressRegion":"CA",
-      "addressCountry":"US"
-    }
+    "url":"https://rfkmzznjvc-arch.github.io/hive6-site/",
+    "description":"Bookkeeping, AP/AR, payroll sync, reporting, and fractional CFO for startups and small businesses.",
+    "email":"rodriguez.joaquin@proton.me",
+    "areaServed":"US"
   }
   </script>
 
-  <!-- Styles -->
   <style>
     :root{
-      --brand:#e69b00;       /* primary */
-      --ink:#0f172a;         /* text */
-      --muted:#51607a;       /* secondary text */
-      --bg:#ffffff;          /* page */
-      --panel:#f7f8fb;       /* light panel */
-      --line:#e6e8ee;        /* borders */
+      --brand:#e69b00;
+      --ink:#0f172a;
+      --muted:#51607a;
+      --bg:#ffffff;
+      --panel:#f7f8fb;
+      --line:#e6e8ee;
       --radius:14px;
       --shadow:0 14px 34px rgba(0,0,0,.08);
       --max:1100px;
     }
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
     body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial}
-    a{color:inherit}
-    img{max-width:100%;display:block}
-
-    /* Header */
-    .top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+    a{color:inherit;text-decoration:none}
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
     .nav{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
-    .brand{display:flex;align-items:center;font-weight:700;gap:.6rem;text-decoration:none}
+    .brand{display:flex;align-items:center;font-weight:700;gap:.6rem}
     .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#fbbf24,#d97706);display:grid;place-items:center;box-shadow:0 10px 24px rgba(251,191,36,.35)}
     .logo i{width:14px;height:14px;display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
     .logo i b{background:#fff;border-radius:2px}
     .menu{display:flex;gap:22px;align-items:center}
-    .menu a{text-decoration:none;color:#3a465b;font-weight:600}
-    .menu a:hover{color:#000}
-    .cta{display:inline-flex;align-items:center;gap:.55rem;background:var(--brand);color:#1b1b1b;text-decoration:none;font-weight:800;border-radius:12px;padding:10px 14px;box-shadow:0 18px 36px rgba(230,155,0,.35)}
-    .burger{display:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px}
-
-    @media (max-width:880px){
-      .menu{display:none}
-      .burger{display:inline-grid;place-items:center}
-      .drawer{display:none;position:fixed;inset:64px 0 0 0;background:#fff;border-top:1px solid var(--line)}
-      .drawer a{display:block;padding:14px 18px;border-bottom:1px solid var(--line);text-decoration:none;color:#2a3446;font-weight:600}
-      .drawer .cta{margin:12px 18px}
-      .drawer.show{display:block}
-    }
-
-    /* Hero */
-    .hero{max-width:var(--max);margin:0 auto;padding:56px 18px 22px;display:grid;gap:28px;grid-template-columns:1.15fr .85fr;align-items:center}
-    .kicker{font-size:.85rem;font-weight:800;letter-spacing:.08em;color:#7a869a;text-transform:uppercase}
-    h1{margin:.25rem 0 0;font-size:42px;line-height:1.12}
-    p.lead{color:var(--muted);font-size:18px;max-width:60ch;margin:.75rem 0 1rem}
-    .actions{display:flex;flex-wrap:wrap;gap:10px}
-    .btn{display:inline-block;border:1px solid var(--line);padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:800}
+    .cta{display:inline-flex;align-items:center;background:var(--brand);color:#1b1b1b;font-weight:700;border-radius:12px;padding:10px 14px;box-shadow:0 18px 36px rgba(230,155,0,.35)}
+    @media(max-width:880px){.menu{display:none}}
+    .hero{max-width:var(--max);margin:0 auto;padding:56px 18px;display:grid;gap:28px;grid-template-columns:1fr 1fr;align-items:center}
+    h1{font-size:42px;line-height:1.15;margin:0}
+    p.lead{color:var(--muted);font-size:18px;max-width:60ch}
+    .btn{display:inline-block;border:1px solid var(--line);padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer}
     .btn.primary{background:var(--brand);border-color:var(--brand);color:#1b1b1b}
-    .btn.light{background:#fff}
     .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
-    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px}
-    .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px}
-    .stat .h{font-weight:700}
-    @media (max-width:880px){.hero{grid-template-columns:1fr;padding:28px 18px}}
-
-    /* Sections */
     section{padding:42px 18px;border-top:1px solid var(--line)}
     .wrap{max-width:var(--max);margin:0 auto}
-    h2{font-size:28px;margin:0}
-    p.sub{color:var(--muted);max-width:70ch;margin:.5rem 0 1.25rem}
-
-    .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
     .tile{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
-    .tile h3{margin:0 0 .3rem;font-size:18px}
-    .tile p{color:var(--muted);font-size:.95rem;margin:0}
-    @media (max-width:880px){.tiles{grid-template-columns:1fr}}
+    footer{border-top:1px solid var(--line);padding:28px 18px;text-align:center;color:#7a869a;font-size:.9rem}
 
-    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
-    .step b{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:9px;background:var(--brand);margin-bottom:.4rem}
-    @media (max-width:880px){.process{grid-template-columns:1fr 1fr}}
-
-    .band{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .quote{background:#101623;color:#e8eefc;border-radius:16px;padding:18px}
-    .quote p{margin:0}
-    .quote strong{color:#fff}
-    @media (max-width:880px){.band{grid-template-columns:1fr}}
-
-    /* Contact */
-    .contact{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}
-    .panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
-    label{display:block;font-weight:700;margin:.35rem 0 .25rem}
-    input,select,textarea{width:100%;padding:12px 12px;border:1px solid var(--line);border-radius:12px;background:#fff;font:inherit}
-    input:focus,select:focus,textarea:focus{outline:3px solid rgba(230,155,0,.35);border-color:var(--brand)}
-    .hint{font-size:.8rem;color:#7a869a;margin-top:.25rem}
-    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .notice{display:none;margin:8px 0 0;padding:10px;border-radius:10px;font-weight:700}
-    .ok{background:#e9f7ee;color:#145c2e}
-    .bad{background:#fdecec;color:#811b1b}
-    @media (max-width:880px){.contact{grid-template-columns:1fr}}
-
-    /* Footer */
-    footer{border-top:1px solid var(--line);padding:28px 18px;color:#7a869a;font-size:.9rem}
-    .foot{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-    .foot small{display:block}
+    /* Modal */
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;padding:18px}
+    .modal{background:#fff;border:1px solid var(--line);border-radius:16px;max-width:520px;width:100%;box-shadow:var(--shadow);padding:18px}
+    .modal h3{margin:.25rem 0;font-size:22px}
+    .modal p{color:var(--muted);margin:.5rem 0 1rem}
+    .modal .row{display:flex;justify-content:flex-end;gap:10px}
+    .show{display:flex}
   </style>
 </head>
-<body>
 
-  <!-- Header -->
-  <header class="top" role="banner">
+<body>
+  <header>
     <div class="nav">
-      <a class="brand" href="#top" aria-label="Hive 6 home">
-        <span class="logo" aria-hidden="true"><i><b></b><b></b><b></b><b></b></i></span>
+      <a class="brand" href="#top">
+        <span class="logo"><i><b></b><b></b><b></b><b></b></i></span>
         Hive 6
       </a>
-      <nav class="menu" aria-label="Primary">
+      <nav class="menu">
         <a href="#services">Services</a>
         <a href="#why">Why Hive 6</a>
-        <a href="#process">How it Works</a>
         <a href="#contact">Contact</a>
-        <a class="cta" href="mailto:hello@example.com">Get started</a>
+        <a class="cta" href="mailto:rodriguez.joaquin@proton.me">Get started</a>
       </nav>
-      <button id="burger" class="burger" aria-label="Open menu" aria-controls="drawer" aria-expanded="false">
-        ☰
-      </button>
     </div>
-    <nav id="drawer" class="drawer" aria-label="Mobile"></nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="top" aria-label="Hero">
+  <section class="hero" id="top">
     <div>
-      <div class="kicker">Accounting & CFO</div>
       <h1>Finance operations done for you.</h1>
       <p class="lead">Bookkeeping, AP/AR, payroll sync, cash visibility, and fractional CFO. You get investor-grade clarity without hiring a full-time team.</p>
-      <div class="actions">
-        <a class="btn primary" href="#contact">Request a quote</a>
-        <a class="btn light" href="tel:+14150000000">Call +1 (415) 000-0000</a>
-      </div>
+      <p><a class="btn primary" href="#contact">Request a quote</a></p>
     </div>
-    <aside class="card" aria-label="Service snapshot">
+    <div class="card">
       <strong>What you get</strong>
-      <div class="grid2" role="list">
-        <div class="stat" role="listitem"><div>Books closed</div><div class="h">Monthly</div></div>
-        <div class="stat" role="listitem"><div>Payables run</div><div class="h">2× / week</div></div>
-        <div class="stat" role="listitem"><div>Cash visibility</div><div class="h">Live</div></div>
-        <div class="stat" role="listitem"><div>AR follow-up</div><div class="h">Proactive</div></div>
-      </div>
-      <p style="color:#5f6e86;margin:.6rem 0 0">Clean numbers, on-time bills, and collections that move.</p>
-    </aside>
+      <ul style="list-style:none;padding:0;margin:.5rem 0 0">
+        <li>✓ Clean, GAAP-ready books</li>
+        <li>✓ Vendors paid on time</li>
+        <li>✓ Weekly cash and runway visibility</li>
+        <li>✓ Fractional CFO guidance</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" aria-labelledby="svcs-h">
+  <section id="services">
     <div class="wrap">
-      <h2 id="svcs-h">Services</h2>
-      <p class="sub">Everything finance teams do. Without hiring a finance team.</p>
+      <h2>Services</h2>
+      <p>Everything finance teams do—without hiring a finance team.</p>
       <div class="tiles">
-        <div class="tile"><h3>Bookkeeping & Close</h3><p>Accruals, reconciliations, journal entries, and GAAP-aligned financials.</p></div>
-        <div class="tile"><h3>Accounts Payable</h3><p>Bill intake, approval routing, and scheduled payments. Vendors happy.</p></div>
-        <div class="tile"><h3>Accounts Receivable</h3><p>Invoicing, friendly collections, cash application, and aging reports.</p></div>
-        <div class="tile"><h3>Payroll & Compliance</h3><p>Payroll sync and support for filings with your CPA and providers.</p></div>
-        <div class="tile"><h3>Reporting & KPIs</h3><p>Monthly management reports and dashboards founders actually use.</p></div>
-        <div class="tile"><h3>Fractional CFO</h3><p>Budgeting, runway, unit economics, and board or lender preparation.</p></div>
+        <div class="tile"><h3>Bookkeeping & Close</h3><p>Accruals, reconciliations, GAAP-aligned reporting, and clean financial statements.</p></div>
+        <div class="tile"><h3>Accounts Payable</h3><p>Bill intake, approvals, and on-time payments.</p></div>
+        <div class="tile"><h3>Accounts Receivable</h3><p>Invoicing, collections, and cash application.</p></div>
+        <div class="tile"><h3>Payroll & Compliance</h3><p>Payroll sync, benefits integration, and CPA-ready reporting.</p></div>
+        <div class="tile"><h3>Fractional CFO</h3><p>Budgeting, runway, and board reporting when you need executive guidance.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Why -->
-  <section id="why" aria-labelledby="why-h">
-    <div class="wrap band">
-      <div>
-        <h2 id="why-h">Why Hive 6</h2>
-        <p class="sub">Clarity for owners and founders. We build reliable finance operations and keep them running.</p>
-        <div class="tiles" style="grid-template-columns:1fr;gap:12px">
-          <div class="tile"><h3>Operate, not just record</h3><p>We run AP, AR, close, and cash cadence so finance stops being a fire drill.</p></div>
-          <div class="tile"><h3>You keep control</h3><p>Your tools, your approvals, your bank. We document everything.</p></div>
-          <div class="tile"><h3>No long contracts</h3><p>Simple monthly engagement. Scale up or down as needed.</p></div>
-        </div>
-      </div>
-      <aside class="quote" aria-label="Client result">
-        <p>“We went from late bills and mystery cash to <strong>weekly visibility</strong> and a clean close. Fundraise diligence was a non-event.”</p>
-        <p style="margin-top:.6rem;color:#a9b4c8">— Founder, SaaS company</p>
-      </aside>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section id="process" aria-labelledby="proc-h">
+  <section id="why">
     <div class="wrap">
-      <h2 id="proc-h">How it Works</h2>
-      <p class="sub">We plug in fast, stabilize, then scale with you.</p>
-      <div class="process">
-        <div class="step"><b>1</b><strong>Intro & scope</strong><div class="hint">Map tools, vendors, customers, and pain points.</div></div>
-        <div class="step"><b>2</b><strong>Connect systems</strong><div class="hint">QuickBooks, payroll, bill pay, banks, and cards.</div></div>
-        <div class="step"><b>3</b><strong>Stabilize cadence</strong><div class="hint">AP/AR rhythm, reconciliations, weekly cash view.</div></div>
-        <div class="step"><b>4</b><strong>Advise & improve</strong><div class="hint">Budgets, runway, and board-ready reporting.</div></div>
+      <h2>Why Hive 6</h2>
+      <p>We provide clarity, reliability, and proactive finance operations for founders and small businesses.</p>
+      <div class="tiles">
+        <div class="tile"><h3>Operate, not just record</h3><p>We handle AP, AR, close, and cash rhythm so finance stops being reactive.</p></div>
+        <div class="tile"><h3>Your tools, your control</h3><p>We integrate with your systems and maintain full transparency.</p></div>
+        <div class="tile"><h3>No long contracts</h3><p>Simple month-to-month engagement. Scale up or down as needed.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" aria-labelledby="c-h">
-    <div class="wrap contact">
-      <div class="panel" role="region" aria-label="Company contact">
-        <h2 id="c-h">Get in touch</h2>
-        <p class="sub">You will hear from an operator, not a call center.</p>
-        <div class="tiles" style="grid-template-columns:1fr;gap:10px">
-          <div class="tile"><h3>Email</h3><p><a href="mailto:hello@example.com">hello@example.com</a></p></div>
-          <div class="tile"><h3>Phone</h3><p><a href="tel:+14150000000">+1 (415) 000-0000</a></p></div>
-          <div class="tile"><h3>Scope</h3><p>Bookkeeping, AP/AR, cash, payroll sync, reporting, CFO.</p></div>
-        </div>
-      </div>
-
-      <form id="lead" class="panel" aria-label="Contact form" novalidate>
-        <!-- Replace FORM_ENDPOINT with your Formspree or backend endpoint -->
-        <input type="hidden" id="endpoint" value="https://formspree.io/f/FORM_ENDPOINT" />
-        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;height:0;width:0" aria-hidden="true" />
-
-        <div class="row">
-          <div>
-            <label for="company">Company</label>
-            <input id="company" name="company" autocomplete="organization" required />
-          </div>
-          <div>
-            <label for="name">Your name</label>
-            <input id="name" name="name" autocomplete="name" required />
-          </div>
-        </div>
-
-        <div class="row">
-          <div>
-            <label for="email">Work email</label>
-            <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required />
-          </div>
-          <div>
-            <label for="size">Company size</label>
-            <select id="size" name="size">
-              <option>Pre-revenue</option>
-              <option>&lt; $1M revenue</option>
-              <option>$1M–$5M revenue</option>
-              <option>$5M–$20M revenue</option>
-              <option>$20M+ revenue</option>
-            </select>
-          </div>
-        </div>
-
-        <label for="needs">What do you need help with?</label>
-        <textarea id="needs" name="needs" rows="5" placeholder="Bookkeeping, AP, AR, cash reporting, fractional CFO…" required></textarea>
-
-        <button class="btn primary" type="submit" id="send">Send inquiry</button>
-        <div id="ok"  class="notice ok"  role="status">Thanks. We received your message.</div>
-        <div id="bad" class="notice bad" role="alert">Could not send. Use <a href="mailto:hello@example.com">email</a> instead.</div>
-        <p class="hint">No long contracts. We reply within one business day.</p>
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Send a message directly. You’ll get a reply within one business day.</p>
+      <form id="lead" novalidate>
+        <label>Company</label>
+        <input name="company" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;">
+        <label>Your name</label>
+        <input name="name" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;">
+        <label>Email</label>
+        <input name="email" type="email" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;">
+        <label>What do you need help with?</label>
+        <textarea name="needs" rows="5" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;"></textarea>
+        <button type="submit" class="btn primary" style="width:100%;">Send inquiry</button>
+        <div id="ok" style="display:none;margin-top:10px;color:green;">Message sent. Thank you.</div>
+        <div id="bad" style="display:none;margin-top:10px;color:red;">Error. Please email <a href="mailto:rodriguez.joaquin@proton.me">rodriguez.joaquin@proton.me</a>.</div>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="foot">
-      <small>© <span id="year"></span> Hive 6</small>
-      <small>Accounting • Bookkeeping • AP/AR • Fractional CFO</small>
+  <footer>© <span id="year"></span> Hive 6 — Accounting, Bookkeeping, AP/AR, Fractional CFO</footer>
+
+  <!-- Thank-you Modal -->
+  <div id="thanks-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="thanks-title" aria-hidden="true">
+    <div class="modal">
+      <h3 id="thanks-title">Thanks — message queued in your email client</h3>
+      <p>We’ll respond from <strong>rodriguez.joaquin@proton.me</strong>. If your mail app didn’t open, send details directly to that address.</p>
+      <div class="row">
+        <button id="close-thanks" class="btn">Close</button>
+      </div>
     </div>
-  </footer>
+  </div>
 
-  <!-- Scripts -->
   <script>
-    // Mobile menu
-    const burger = document.getElementById('burger');
-    const drawer = document.getElementById('drawer');
-    const links = `
-      <a href="#services">Services</a>
-      <a href="#why">Why Hive 6</a>
-      <a href="#process">How it Works</a>
-      <a href="#contact">Contact</a>
-      <a class="cta" href="mailto:hello@example.com">Get started</a>`;
-    drawer.innerHTML = links;
-    burger.addEventListener('click', () => {
-      const open = drawer.classList.toggle('show');
-      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-
-    // Footer year
+    // footer year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Contact form: client-side validation + fetch to Formspree or fallback mailto
+    // helpers
     const form = document.getElementById('lead');
-    const ok   = document.getElementById('ok');
-    const bad  = document.getElementById('bad');
-    const endpoint = document.getElementById('endpoint').value;
+    const ok = document.getElementById('ok');
+    const bad = document.getElementById('bad');
 
-    function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
-    function show(el){el.style.display='block'}; function hide(el){el.style.display='none'};
+    const overlay = document.getElementById('thanks-overlay');
+    const closeBtn = document.getElementById('close-thanks');
 
-    form.addEventListener('submit', async (e) => {
+    function openThanks(){
+      overlay.classList.add('show');
+      overlay.removeAttribute('aria-hidden');
+      closeBtn.focus();
+      // Close on ESC
+      const escHandler = (e)=>{ if(e.key==='Escape'){ closeThanks(); } };
+      document.addEventListener('keydown', escHandler, { once:true });
+      // Close on outside click
+      overlay.addEventListener('click', (e)=>{ if(e.target===overlay) closeThanks(); }, { once:true });
+    }
+    function closeThanks(){
+      overlay.classList.remove('show');
+      overlay.setAttribute('aria-hidden','true');
+    }
+    closeBtn.addEventListener('click', closeThanks);
+
+    // mailto submit + modal
+    form.addEventListener('submit', e => {
       e.preventDefault();
-      hide(ok); hide(bad);
-
-      const data = {
-        company: form.company.value.trim(),
-        name: form.name.value.trim(),
-        email: form.email.value.trim(),
-        size: form.size.value,
-        needs: form.needs.value.trim(),
-        source: window.location.href
-      };
-      // Basic checks
-      if(!data.company || !data.name || !validEmail(data.email) || !data.needs){
-        show(bad); bad.textContent = 'Please complete required fields with a valid email.'; return;
-      }
-      // Honeypot check
-      if(form.website.value){ return; }
-
-      // If you haven’t set a real endpoint, open mailto
-      if(!endpoint || endpoint.includes('FORM_ENDPOINT')){
-        const subject = encodeURIComponent('New inquiry — Hive 6');
-        const body =
-          encodeURIComponent(
-            `Company: ${data.company}\nName: ${data.name}\nEmail: ${data.email}\nSize: ${data.size}\nNeeds: ${data.needs}\nSource: ${data.source}`
-          );
-        window.location.href = `mailto:hello@example.com?subject=${subject}&body=${body}`;
-        show(ok); form.reset(); return;
-      }
-
-      // POST to endpoint
-      try{
-        const res = await fetch(endpoint, {
-          method:'POST',
-          headers:{'Content-Type':'application/json','Accept':'application/json'},
-          body: JSON.stringify(data)
-        });
-        if(res.ok){
-          show(ok); form.reset();
-        }else{
-          show(bad);
-        }
-      }catch(_){
-        show(bad);
-      }
+      const data = new FormData(form);
+      const subject = encodeURIComponent('New inquiry — Hive 6');
+      const body = encodeURIComponent(
+        `Company: ${data.get('company')}\nName: ${data.get('name')}\nEmail: ${data.get('email')}\nNeeds: ${data.get('needs')}`
+      );
+      // trigger default mail client
+      window.location.href = `mailto:rodriguez.joaquin@proton.me?subject=${subject}&body=${body}`;
+      // UI feedback
+      ok.style.display = 'block';
+      bad.style.display = 'none';
+      form.reset();
+      // show thank-you popup
+      openThanks();
     });
   </script>
 </body>
