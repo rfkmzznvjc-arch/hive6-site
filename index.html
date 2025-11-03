@@ -5,25 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hive 6 — Accounting, Bookkeeping & Fractional CFO</title>
   <meta name="description" content="Hive 6 provides expert bookkeeping, AP/AR, payroll sync, and fractional CFO services for startups and small businesses. Clean books, cash visibility, and confidence in your finances." />
-  <link rel="canonical" href="https://rfkmzznjvc-arch.github.io/hive6-site/" />
+  <link rel="canonical" href="https://hive6group.com/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Hive 6 — Accounting, Bookkeeping & Fractional CFO" />
   <meta property="og:description" content="Clean books, cash visibility, and finance operations you can trust." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rfkmzznjvc-arch.github.io/hive6-site/" />
-  <meta property="og:image" content="https://rfkmzznjvc-arch.github.io/hive6-site/images/hive6-team-working.jpg" />
+  <meta property="og:url" content="https://hive6group.com/" />
+  <meta property="og:image" content="https://hive6group.com/images/hive6-team-working.jpg" />
 
-  <!-- Schema.org -->
+  <!-- Schema.org (AccountingService + LocalBusiness) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"AccountingService",
     "name":"Hive 6",
-    "url":"https://rfkmzznjvc-arch.github.io/hive6-site/",
+    "url":"https://hive6group.com/",
     "description":"Bookkeeping, AP/AR, payroll sync, reporting, and fractional CFO for startups and small businesses.",
     "email":"rodriguez.joaquin@proton.me",
-    "areaServed":"US"
+    "areaServed":"US",
+    "image":"https://hive6group.com/images/hive6-team-working.jpg",
+    "logo":"https://hive6group.com/images/logo.png",
+    "sameAs":[
+      "https://www.linkedin.com/company/hive6",
+      "https://x.com/hive6finance",
+      "https://g.page/r/YOUR_PLACE_ID"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Hive 6",
+    "url":"https://hive6group.com/",
+    "telephone":"+14159968102",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"San Francisco",
+      "addressRegion":"CA",
+      "addressCountry":"US"
+    },
+    "priceRange":"$$"
   }
   </script>
 
@@ -51,7 +74,14 @@
     .menu{display:flex;gap:22px;align-items:center}
     .cta{display:inline-flex;align-items:center;background:var(--brand);color:#1b1b1b;font-weight:700;border-radius:12px;padding:10px 14px;box-shadow:0 18px 36px rgba(230,155,0,.35)}
     @media(max-width:880px){.menu{display:none}}
+
+    /* language buttons */
+    .lang{display:flex;gap:10px;align-items:center;margin-left:14px}
+    .lang button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px;font-weight:700;cursor:pointer}
+    .lang button:hover{background:#fafafa}
+
     .hero{max-width:var(--max);margin:0 auto;padding:56px 18px;display:grid;gap:28px;grid-template-columns:1fr 1fr;align-items:center}
+    @media(max-width:880px){.hero{grid-template-columns:1fr}}
     h1{font-size:42px;line-height:1.15;margin:0}
     p.lead{color:var(--muted);font-size:18px;max-width:60ch}
     .btn{display:inline-block;border:1px solid var(--line);padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer}
@@ -80,11 +110,18 @@
         <span class="logo"><i><b></b><b></b><b></b><b></b></i></span>
         Hive 6
       </a>
+
       <nav class="menu">
         <a href="#services">Services</a>
         <a href="#why">Why Hive 6</a>
         <a href="#contact">Contact</a>
         <a class="cta" href="mailto:rodriguez.joaquin@proton.me">Get started</a>
+
+        <!-- Language buttons -->
+        <span class="lang" aria-label="Language">
+          <button type="button" onclick="translatePage('es')" aria-label="Translate to Spanish">Español</button>
+          <button type="button" onclick="translatePage('zh-TW')" aria-label="Translate to Cantonese">中文</button>
+        </span>
       </nav>
     </div>
   </header>
@@ -165,6 +202,9 @@
     </div>
   </div>
 
+  <!-- Hidden Google Translate root (required) -->
+  <div id="google_translate_element" style="display:none;"></div>
+
   <script>
     // footer year
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -181,10 +221,8 @@
       overlay.classList.add('show');
       overlay.removeAttribute('aria-hidden');
       closeBtn.focus();
-      // Close on ESC
       const escHandler = (e)=>{ if(e.key==='Escape'){ closeThanks(); } };
       document.addEventListener('keydown', escHandler, { once:true });
-      // Close on outside click
       overlay.addEventListener('click', (e)=>{ if(e.target===overlay) closeThanks(); }, { once:true });
     }
     function closeThanks(){
@@ -201,15 +239,52 @@
       const body = encodeURIComponent(
         `Company: ${data.get('company')}\nName: ${data.get('name')}\nEmail: ${data.get('email')}\nNeeds: ${data.get('needs')}`
       );
-      // trigger default mail client
       window.location.href = `mailto:rodriguez.joaquin@proton.me?subject=${subject}&body=${body}`;
-      // UI feedback
       ok.style.display = 'block';
       bad.style.display = 'none';
       form.reset();
-      // show thank-you popup
       openThanks();
     });
+
+    // ---------- Language: Google Translate ----------
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'es,zh-TW',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    function ensureTranslateLoaded(cb){
+      if (window.google && window.google.translate) return cb();
+      const s = document.createElement('script');
+      s.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      document.body.appendChild(s);
+      const i = setInterval(()=>{
+        if (window.google && window.google.translate){
+          clearInterval(i); cb();
+        }
+      }, 200);
+    }
+    function translatePage(lang){
+      ensureTranslateLoaded(()=>{
+        // open the hidden menu frame and click target language
+        const frame = document.querySelector('.goog-te-menu-frame');
+        if (!frame) {
+          // force open by creating a dummy dropdown click
+          const te = document.querySelector('#google_translate_element');
+          if (te) te.click();
+          setTimeout(()=>translatePage(lang), 400);
+          return;
+        }
+        const inner = frame.contentDocument || frame.contentWindow.document;
+        const items = inner.querySelectorAll('.goog-te-menu2-item span.text');
+        for (let i=0;i<items.length;i++){
+          const label = items[i].textContent.trim();
+          const match = (lang==='es' && /Spanish/i.test(label)) || (lang==='zh-TW' && /Chinese \(Traditional\)/i.test(label));
+          if (match){ items[i].click(); break; }
+        }
+      });
+    }
   </script>
 </body>
 </html>
