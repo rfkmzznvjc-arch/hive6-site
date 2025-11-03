@@ -14,7 +14,7 @@
   <meta property="og:url" content="https://hive6group.com/" />
   <meta property="og:image" content="https://hive6group.com/images/hive6-team-working.jpg" />
 
-  <!-- Schema.org (AccountingService + LocalBusiness) -->
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -23,79 +23,68 @@
     "url":"https://hive6group.com/",
     "description":"Bookkeeping, AP/AR, payroll sync, reporting, and fractional CFO for startups and small businesses.",
     "email":"rodriguez.joaquin@proton.me",
-    "areaServed":"US",
-    "image":"https://hive6group.com/images/hive6-team-working.jpg",
-    "logo":"https://hive6group.com/images/logo.png",
-    "sameAs":[
-      "https://www.linkedin.com/company/hive6",
-      "https://x.com/hive6finance",
-      "https://g.page/r/YOUR_PLACE_ID"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Hive 6",
-    "url":"https://hive6group.com/",
-    "telephone":"+14159968102",
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"San Francisco",
-      "addressRegion":"CA",
-      "addressCountry":"US"
-    },
-    "priceRange":"$$"
+    "areaServed":"US"
   }
   </script>
 
   <style>
     :root{
-      --brand:#e69b00;
-      --ink:#0f172a;
-      --muted:#51607a;
-      --bg:#ffffff;
-      --panel:#f7f8fb;
-      --line:#e6e8ee;
-      --radius:14px;
-      --shadow:0 14px 34px rgba(0,0,0,.08);
+      --brand:#e69b00;--ink:#0f172a;--muted:#51607a;--bg:#fff;
+      --line:#e6e8ee;--radius:14px;--shadow:0 14px 34px rgba(0,0,0,.08);
       --max:1100px;
     }
     *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial}
+    body{margin:0;background:var(--bg);color:var(--ink);
+         font:16px/1.55 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial}
     a{color:inherit;text-decoration:none}
-    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
-    .nav{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+    header{position:sticky;top:0;z-index:50;background:#fff;
+           border-bottom:1px solid var(--line)}
+    .nav{max-width:var(--max);margin:0 auto;display:flex;
+         align-items:center;justify-content:space-between;padding:14px 18px}
     .brand{display:flex;align-items:center;font-weight:700;gap:.6rem}
-    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#fbbf24,#d97706);display:grid;place-items:center;box-shadow:0 10px 24px rgba(251,191,36,.35)}
-    .logo i{width:14px;height:14px;display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
+    .logo{width:36px;height:36px;border-radius:10px;
+          background:linear-gradient(135deg,#fbbf24,#d97706);
+          display:grid;place-items:center;box-shadow:0 10px 24px rgba(251,191,36,.35)}
+    .logo i{width:14px;height:14px;display:grid;
+            grid-template-columns:repeat(2,1fr);gap:2px}
     .logo i b{background:#fff;border-radius:2px}
     .menu{display:flex;gap:22px;align-items:center}
-    .cta{display:inline-flex;align-items:center;background:var(--brand);color:#1b1b1b;font-weight:700;border-radius:12px;padding:10px 14px;box-shadow:0 18px 36px rgba(230,155,0,.35)}
+    .cta{display:inline-flex;align-items:center;background:var(--brand);
+         color:#1b1b1b;font-weight:700;border-radius:12px;
+         padding:10px 14px;box-shadow:0 18px 36px rgba(230,155,0,.35)}
     @media(max-width:880px){.menu{display:none}}
 
     /* language buttons */
     .lang{display:flex;gap:10px;align-items:center;margin-left:14px}
-    .lang button{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px;font-weight:700;cursor:pointer}
-    .lang button:hover{background:#fafafa}
+    .gt-btn{border:1px solid var(--line);background:#fff;
+            border-radius:10px;padding:8px 10px;font-weight:700;cursor:pointer}
+    .gt-btn:hover{background:#fafafa}
 
-    .hero{max-width:var(--max);margin:0 auto;padding:56px 18px;display:grid;gap:28px;grid-template-columns:1fr 1fr;align-items:center}
+    .hero{max-width:var(--max);margin:0 auto;padding:56px 18px;
+          display:grid;gap:28px;grid-template-columns:1fr 1fr;align-items:center}
     @media(max-width:880px){.hero{grid-template-columns:1fr}}
     h1{font-size:42px;line-height:1.15;margin:0}
     p.lead{color:var(--muted);font-size:18px;max-width:60ch}
-    .btn{display:inline-block;border:1px solid var(--line);padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer}
+    .btn{display:inline-block;border:1px solid var(--line);
+         padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer}
     .btn.primary{background:var(--brand);border-color:var(--brand);color:#1b1b1b}
-    .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+    .card{background:#fff;border:1px solid var(--line);
+          border-radius:18px;padding:18px;box-shadow:var(--shadow)}
     section{padding:42px 18px;border-top:1px solid var(--line)}
     .wrap{max-width:var(--max);margin:0 auto}
     .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
     .tile{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
     footer{border-top:1px solid var(--line);padding:28px 18px;text-align:center;color:#7a869a;font-size:.9rem}
+    /* hide translate UI */
+    .goog-te-banner-frame,.goog-te-balloon-frame{display:none!important}
+    #goog-gt-tt,.goog-te-spinner-pos{display:none!important}
+    body{top:0!important}
 
-    /* Modal */
-    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;padding:18px}
-    .modal{background:#fff;border:1px solid var(--line);border-radius:16px;max-width:520px;width:100%;box-shadow:var(--shadow);padding:18px}
+    /* modal */
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);
+      display:none;align-items:center;justify-content:center;padding:18px}
+    .modal{background:#fff;border:1px solid var(--line);border-radius:16px;
+      max-width:520px;width:100%;box-shadow:var(--shadow);padding:18px}
     .modal h3{margin:.25rem 0;font-size:22px}
     .modal p{color:var(--muted);margin:.5rem 0 1rem}
     .modal .row{display:flex;justify-content:flex-end;gap:10px}
@@ -107,20 +96,16 @@
   <header>
     <div class="nav">
       <a class="brand" href="#top">
-        <span class="logo"><i><b></b><b></b><b></b><b></b></i></span>
-        Hive 6
+        <span class="logo"><i><b></b><b></b><b></b><b></b></i></span> Hive 6
       </a>
-
       <nav class="menu">
         <a href="#services">Services</a>
         <a href="#why">Why Hive 6</a>
         <a href="#contact">Contact</a>
         <a class="cta" href="mailto:rodriguez.joaquin@proton.me">Get started</a>
-
-        <!-- Language buttons -->
         <span class="lang" aria-label="Language">
-          <button type="button" onclick="translatePage('es')" aria-label="Translate to Spanish">Español</button>
-          <button type="button" onclick="translatePage('zh-TW')" aria-label="Translate to Cantonese">中文</button>
+          <button type="button" data-lang="es" class="gt-btn">Español</button>
+          <button type="button" data-lang="zh-TW" class="gt-btn">中文</button>
         </span>
       </nav>
     </div>
@@ -146,7 +131,7 @@
   <section id="services">
     <div class="wrap">
       <h2>Services</h2>
-      <p>Everything finance teams do—without hiring a finance team.</p>
+      <p>Everything finance teams do — without hiring a finance team.</p>
       <div class="tiles">
         <div class="tile"><h3>Bookkeeping & Close</h3><p>Accruals, reconciliations, GAAP-aligned reporting, and clean financial statements.</p></div>
         <div class="tile"><h3>Accounts Payable</h3><p>Bill intake, approvals, and on-time payments.</p></div>
@@ -191,100 +176,69 @@
 
   <footer>© <span id="year"></span> Hive 6 — Accounting, Bookkeeping, AP/AR, Fractional CFO</footer>
 
-  <!-- Thank-you Modal -->
+  <!-- Modal -->
   <div id="thanks-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="thanks-title" aria-hidden="true">
     <div class="modal">
       <h3 id="thanks-title">Thanks — message queued in your email client</h3>
       <p>We’ll respond from <strong>rodriguez.joaquin@proton.me</strong>. If your mail app didn’t open, send details directly to that address.</p>
-      <div class="row">
-        <button id="close-thanks" class="btn">Close</button>
-      </div>
+      <div class="row"><button id="close-thanks" class="btn">Close</button></div>
     </div>
   </div>
 
-  <!-- Hidden Google Translate root (required) -->
+  <!-- Translate root -->
   <div id="google_translate_element" style="display:none;"></div>
 
   <script>
-    // footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent=new Date().getFullYear();
 
-    // helpers
-    const form = document.getElementById('lead');
-    const ok = document.getElementById('ok');
-    const bad = document.getElementById('bad');
+    const form=document.getElementById('lead'),
+          ok=document.getElementById('ok'),
+          bad=document.getElementById('bad'),
+          overlay=document.getElementById('thanks-overlay'),
+          closeBtn=document.getElementById('close-thanks');
 
-    const overlay = document.getElementById('thanks-overlay');
-    const closeBtn = document.getElementById('close-thanks');
+    function openThanks(){overlay.classList.add('show');overlay.removeAttribute('aria-hidden');closeBtn.focus();}
+    function closeThanks(){overlay.classList.remove('show');overlay.setAttribute('aria-hidden','true');}
+    closeBtn.addEventListener('click',closeThanks);
 
-    function openThanks(){
-      overlay.classList.add('show');
-      overlay.removeAttribute('aria-hidden');
-      closeBtn.focus();
-      const escHandler = (e)=>{ if(e.key==='Escape'){ closeThanks(); } };
-      document.addEventListener('keydown', escHandler, { once:true });
-      overlay.addEventListener('click', (e)=>{ if(e.target===overlay) closeThanks(); }, { once:true });
-    }
-    function closeThanks(){
-      overlay.classList.remove('show');
-      overlay.setAttribute('aria-hidden','true');
-    }
-    closeBtn.addEventListener('click', closeThanks);
-
-    // mailto submit + modal
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit',e=>{
       e.preventDefault();
-      const data = new FormData(form);
-      const subject = encodeURIComponent('New inquiry — Hive 6');
-      const body = encodeURIComponent(
-        `Company: ${data.get('company')}\nName: ${data.get('name')}\nEmail: ${data.get('email')}\nNeeds: ${data.get('needs')}`
-      );
-      window.location.href = `mailto:rodriguez.joaquin@proton.me?subject=${subject}&body=${body}`;
-      ok.style.display = 'block';
-      bad.style.display = 'none';
-      form.reset();
-      openThanks();
+      const d=new FormData(form);
+      const subj=encodeURIComponent('New inquiry — Hive 6');
+      const body=encodeURIComponent(`Company: ${d.get('company')}\nName: ${d.get('name')}\nEmail: ${d.get('email')}\nNeeds: ${d.get('needs')}`);
+      window.location.href=`mailto:rodriguez.joaquin@proton.me?subject=${subj}&body=${body}`;
+      ok.style.display='block';bad.style.display='none';form.reset();openThanks();
     });
 
-    // ---------- Language: Google Translate ----------
-    function googleTranslateElementInit() {
+    /* Google Translate init */
+    function googleTranslateElementInit(){
       new google.translate.TranslateElement({
-        pageLanguage: 'en',
-        includedLanguages: 'es,zh-TW',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
+        pageLanguage:'en',includedLanguages:'es,zh-TW',
+        layout:google.translate.TranslateElement.InlineLayout.SIMPLE
+      },'google_translate_element');
     }
-    function ensureTranslateLoaded(cb){
-      if (window.google && window.google.translate) return cb();
-      const s = document.createElement('script');
-      s.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-      document.body.appendChild(s);
-      const i = setInterval(()=>{
-        if (window.google && window.google.translate){
-          clearInterval(i); cb();
-        }
-      }, 200);
+    (function loadGTE(){
+      var s=document.createElement('script');
+      s.src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      document.head.appendChild(s);
+    })();
+
+    /* Cookie method for language switch */
+    function setTranslateCookie(lang){
+      var val="/en/"+lang;
+      document.cookie="googtrans="+val+"; path=/";
+      try{
+        var h=location.hostname.split('.');
+        if(h.length>2)h.shift();
+        document.cookie="googtrans="+val+"; path=/; domain=."+h.join('.');
+      }catch(e){}
+      location.reload();
     }
-    function translatePage(lang){
-      ensureTranslateLoaded(()=>{
-        // open the hidden menu frame and click target language
-        const frame = document.querySelector('.goog-te-menu-frame');
-        if (!frame) {
-          // force open by creating a dummy dropdown click
-          const te = document.querySelector('#google_translate_element');
-          if (te) te.click();
-          setTimeout(()=>translatePage(lang), 400);
-          return;
-        }
-        const inner = frame.contentDocument || frame.contentWindow.document;
-        const items = inner.querySelectorAll('.goog-te-menu2-item span.text');
-        for (let i=0;i<items.length;i++){
-          const label = items[i].textContent.trim();
-          const match = (lang==='es' && /Spanish/i.test(label)) || (lang==='zh-TW' && /Chinese \(Traditional\)/i.test(label));
-          if (match){ items[i].click(); break; }
-        }
-      });
-    }
+
+    document.addEventListener('click',e=>{
+      var b=e.target.closest('.gt-btn');if(!b)return;
+      e.preventDefault();setTranslateCookie(b.dataset.lang);
+    });
   </script>
 </body>
 </html>
